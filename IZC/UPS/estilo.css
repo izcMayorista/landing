@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
 }
 body{
     background-color: #f3f3f3;
-    font-family: sans-serif;
 }
 :root{
     --IZC: #00B4E5;
@@ -36,49 +36,44 @@ img{
 /* header */
 /* ------------------------------------------------------------ */
 header{
-    transition: 2s;
-    background-image: linear-gradient();
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-header .logo-header img{
-    margin-top: 30px;
-    padding: 12px;
-    width: 160px;
-    background-color: #f3f3f3;
-    border-radius: 50%;
-}
-header .logo{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #E3E2E2; */
     background-color: #f3f3f3;
-    display: none;
+    width: 100%;
 }
 header .logo img{ 
     padding: 12px;
-    width: 160px;
+    width: 140px;
 }
 header ul{
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--IZC);
-    height: 50px;
 }
 header ul li{
-    text-align: center ;
+    text-align: center;
     margin: 10px 0px;
-    color: #383434;
+    color: #555;
     padding: 15px;
-    color: #fff;
+}
+header a:not(header ul a){
+    background-color: var(--IZC);
+    padding: 12px;
+    margin: 15px;
+    width: 160px;
+    text-align: center;
+    color: #eee;
+    border-radius: 50px;
 }
 header ul li:hover{
-    transition: 1s;
-    background-color: #7271716e;
+    /* transition: .5s; */
+    border-bottom: .5px solid var(--IZC);
+    /* background-color: #727171; */
 }
-
 /*------------------------------------------*/
 /*continer*/
 /*------------------------------------------*/
@@ -95,15 +90,49 @@ main{
     background-size: cover;
     height: 100vh;
 }
-main .logo{
-    width: 130px;
+main section{
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
 }
-main h1{
-    font-size: 45px;
+main div{
+    width: 80%;
 }
-main .main-img-carrousel{
-    width: 300px;
-    padding: 35px;
+h1{
+    width: 600px;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+/*------------------------------------------*/
+/*icons*/
+/*------------------------------------------*/
+.icons{
+    margin-top: -70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons div{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #e9e9e9;
+    border-radius: 6px;
+    border: .5px solid #eee;
+    padding: 12px;
+    box-shadow: 2px 2px 7px #8b8b8b;
+}
+.icons div img{
+    width: 100px;
 }
 
 @media screen and (max-width: 590px) {

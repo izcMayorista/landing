@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
     <!--css-->
     <link rel="stylesheet" href="estilo.css">
+    <!-- tailwind -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
 
     <title>UPS Online UPS Interactiva SAT | IZC Mayorista</title>
 </head>
@@ -21,18 +23,18 @@
     </div>
 
     <!--header-->
-    <header>
-        <ul>
+    <header class="flex-around">    
+        <ul class="flex-around">
             <a class="logo" href="index.html">
                 <img src="img/izc-logo.png" alt="logo oficial IZC">
             </a>   
-            <a href="">
+            <a href="#productos">
                 <li>Catálogo</li>
             </a>
-            <a href="">
+            <a href="#distribuidor">
                 <li>Distribuidores</li>
             </a>       
-            <a href="">
+            <a href="#calculadora">
                 <li>Calculadora SAI</li>
             </a>
         </ul>
@@ -43,7 +45,7 @@
     
     <!-- main -->
     <main>
-        <section>
+        <section class="flex-around">
             <div>
                 <span>Bienvenido a IZC</span>
                 <h1>Distribuidor Mayorista UPS</h1>
@@ -51,125 +53,640 @@
         </section>
     </main>
 
-
     <div class="container">
         
-    <section class="icons">
-        <div>
-            <img src="img/icon-one.png" alt="perdida de informacion">
-            <p>Reduce daños y perdidas de información</p>
-        </div>  
-        <div>
-            <img src="img/icon-two.png" alt="control remoto">
-            <p>Control remoto de equipos UPS</p>
-        </div>
-        <div>
-            <img src="img/icon-three.png" alt="">
-            <p>Aumenta la eficiencia y la satisfacción del usuario.</p>
-        </div>
-    </section>
-        
-
-        <div class="textos">
-            <h2>¿Aún no cuidas de tus equipos?</h2>
-            <p>
-                ¿Eres consciente del daño que pueden generar los cambios abrutos en el suminitros de corriente (ruidos, interferencias, caidas de voltaje y en el peor de los casos la suspensión de la energia). Por eso nuestro increible portafolio comprende un amplio número de soluciones, reunidos en 4 familias de hardware para protección de energia como lo son: </p> 
-                <br><br>
-                <li><a href="#regulador">Reguladores</a></li>
-                <li><a href="#ups-interactiva">UPS Interactiva</a></li>
-                <li><a href="#ups-online">UPS Online</a></li>
-                <li><a href="#inversor">Inversores</a></li>
-                <br><br>
-                <p>                
-                    Estos productos detectan anomalías en el voltaje de la red pública y aplican correcciones de voltaje rápidamente sin depender del almacenamiento de energía para garantizar una fuente de alimentación trifásica siempre limpia y confiable. Las unidades están diseñadas para actuar de manera rápida y eficaz: cada unidad puede detectar una perturbación de voltaje dentro de 250 µs.
+        <section class="icons flex-around">
+            <div>
+                <img src="img/icon-one.png" alt="perdida de informacion">
+                <p>Reduce daños y perdidas de información</p>
+            </div>  
+            <div>
+                <img src="img/icon-two.png" alt="control remoto">
+                <p>Control remoto y administración equipos UPS</p>
+            </div>
+            <div>
+                <img src="img/icon-three.png" alt="">
+                <p>Aumenta la eficiencia y la satisfacción del usuario.</p>
+            </div>
+        </section>
+            
+        <!-- servidor -->
+        <section class="servidor flex-around">
+            <div>
+                <h2>¿Anomalías en el voltaje?</h2><hr>
+                <p>
+                    Las alteraciones de voltaje pueden poner en peligro las ejecuciones de equipos eléctricos y electrónicos, (ruidos, interferencias, caidas de voltaje y en el peor de los casos la suspensión de la energia) lo cual suele costarle a las empresas y usuarios millones de dólares al año.
                 </p>
-        </div>
-        
-            <section class="content-card">
-                <div class="card">
-                    <img src="img/proteccion.jpg" alt="">
-                    <div class="texto">
-                        <h2>¿Qué gano con SAT?</h2>
-                        <li>Cuidado ante problemas en redes.</li>
-                        <li>Tiempo de autonomia para cerrado correcto de mis equipos.</li>
-                        <li>Evita perdidas de información.</li>
-                        <li>Control y monitoreo de manera remota(UPS online).</li>
-                        <li>Hasta 8 horas de autonomia para monitores.</li>
-                        <li>Realizar mantenimientos preventivos sin desconectar las cargas.</li>
-                        <li>2 Años de garantia, incluyendo las baterias.</li>
-                        <br><br><br>
-                        <a href="https://forms.gle/FQWtuAQY27mEZsY78" target="_blank" rel="noopener" class="boton-cotizar">Cotizar Ahora</a>
+                <ul>
+                    <a href="">
+                        <li>UPS Interactiva / Online</li>
+                    </a>
+                    <a href="">
+                        <li>Inversores</li>
+                    </a>
+                    <a href="">
+                        <li>Reguladores</li>
+                    </a>
+                </ul>
+                <a href="">
+                    <button>
+                        Ver Productos
+                    </button>
+                </a>
+            </div>
+            <img src="img/proteccion.jpg" alt="ups para servidores">
+        </section>
+
+        <!-- productos -->
+        <section class="productos" id="productos">
+            <h2>Línea de producto SAT</h2><hr>
+            <div class="productos-container flex-around">
+                <div>
+                    <img src="img/ups-online.jpg" alt="ups online">
+                        <p>UPS Online</p>
                     </div>
+                <div>
+                    <img src="img/ups-interactiva.jpg" alt="ups Interactiva1">
+                        <p>UPS Interactiva</p>
                 </div>
-            </section>
-        
-            <section class="info">
-                <div class="info-1" id="regulador">
-                    <div>
-                        <h2>Reguladores</h2>
-                        <p>
-                            Diseñados para brindar energía limpia y segura a todo dispositivo eléctrico, todo esto con una gran cantidad de conexiones, red eléctrica, USB y RJ11. Protección contra cortos circuitos o sobrecargas, posee cortacircuitos para proteger tus equipos, tensión de salida estable y limpia gracias a sus reguladores, 5 puertos USB a 5V 4A.
-                        </p>
-                        <br><br>
-                        <a href="https://forms.gle/FQWtuAQY27mEZsY78" target="_blank" rel="noopener" class="boton-cotizar">Cotizar Ahora</a>
-                    </div>
-                    <img src="img/regulador.jpg" alt="inversor-1500">
+                <div>
+                    <img src="img/bateria.jpg" alt="baterias para ups">
+                    <p>Baterías para UPS</p>
                 </div>
-        
-                <div class="info-2" id="ups-interactiva">
-                    <img src="img/UPS-interactiva.jpg" alt="inversor-1500">
-                    <div>
-                        <h2>UPS Interactiva</h2>
-                        <p>
-                            Capacidad 2000va – 1200 watts (6 tomas de salida batería /regulada) - 2 batería de 12v-9 amperios - tiempo de respaldo 7  a  30 minutos - incorpora un sistema avr (regulador automático de voltaje) y supresores de picos, el rectificador alimenta las baterías permanentemente y el inversor solo se activa cuando los valores de voltaje de alimentación están por fuera de un rango especificado - tiempo de transferencia 2-7ms, max. 10ms - tiempo de autonomía 7 full carga - nema 5-15.
-                        </p>
-                        <br><br>
-                        <a href="https://forms.gle/FQWtuAQY27mEZsY78" target="_blank" rel="noopener" class="boton-cotizar">Cotizar Ahora</a>
-                    </div>
+                <div>
+                    <img src="img/inversor.jpg" alt="inversor de energia">
+                    <p>Inversor de corriente</p>
                 </div>
-        
-                <div class="info-1" id="ups-online">
-                    <div>
-                        <h2>UPS Online</h2>
-                        <p>
-                            Capacidad: 10.000VA, pantalla LCD, interfaz de monitoreo., factor de potencia 0.9, bornera, 16 baterías de 9 amperios,tiempo de respaldo 7 a 30 minutos. Cuenta con función ecoahorro de energí­a, tiempo de transferencia 0ms, rango de voltaje ajustable 115vac - 295vac de acuerdo a la carga. Tiempo de autonomí­a 7 minutos full carga.
-                        </p>
-                        <br><br>
-                        <a href="https://forms.gle/FQWtuAQY27mEZsY78" target="_blank" rel="noopener" class="boton-cotizar">Cotizar Ahora</a>
-                    </div>
-                    <img src="img/ups.jpg" alt="inversor-1500">
+
+                <div>
+                    <img src="img/regulador.jpg" alt="regulador de corriente">
+                        <p>Regulador de corriente</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Descricciones de lineas de producto -->
+        <section class="line-description-product">
+            <div>
+                <h2>UPS Online</h2>
+                <p>
+                    Capacidad: 10.000VA, pantalla LCD, interfaz de monitoreo., factor de potencia 0.9, bornera, 16 baterías de 9 amperios,tiempo de respaldo 7 a 30 minutos. Cuenta con función ecoahorro de energí­a, tiempo de transferencia 0ms, rango de voltaje ajustable 115vac - 295vac de acuerdo a la carga. Tiempo de autonomí­a 7 minutos full carga.
+                </p>
+            </div>
+
+            <div>
+                <h2>UPS Interactiva</h2>
+                <p>
+                    Capacidad 2000va – 1200 watts (6 tomas de salida batería /regulada) - 2 batería de 12v-9 amperios - tiempo de respaldo 7  a  30 minutos - incorpora un sistema avr (regulador automático de voltaje) y supresores de picos, el rectificador alimenta las baterías permanentemente y el inversor solo se activa cuando los valores de voltaje de alimentación están por fuera de un rango especificado - tiempo de transferencia 2-7ms, max. 10ms - tiempo de autonomía 7 full carga - nema 5-15.
+                </p>
+            </div>
+
+            <div>
+                <h2>Inversores</h2>
+                <p>
+                    Diseñado con tecnologia DSP (Tecnologia de Control Digital), salida de onda sinusoidal pura 100%, tiempo de transferencia igual o menor 9ms, protección contra cortocircuito, sobrecarga y altas temperaturas, modo de carga inteligente de 3 etapas, corriente de carga Max. 60A, corriente de carga ajustable y voltaje de carga en el panel frontal, factor de potencia 1.
+                </p>
+            </div>
+
+            <div>
+                <h2>Reguladores</h2>
+                <p>
+                    Diseñados para brindar energía limpia y segura a todo dispositivo eléctrico, todo esto con una gran cantidad de conexiones, red eléctrica, USB y RJ11. Protección contra cortos circuitos o sobrecargas, posee cortacircuitos para proteger tus equipos, tensión de salida estable y limpia gracias a sus reguladores, 5 puertos USB a 5V 4A.
+                </p>
+            </div>
+            
+        </section>
         
-                <div class="info-2" id="inversor">
-                    <img src="img/inversor-1500.jpg" alt="inversor-1500">
-                    <div>
-                        <h2>Inversores</h2>
-                        <p>
-                            Diseñado con tecnologia DSP (Tecnologia de Control Digital), salida de onda sinusoidal pura 100%, tiempo de transferencia igual o menor 9ms, protección contra cortocircuito, sobrecarga y altas temperaturas, modo de carga inteligente de 3 etapas, corriente de carga Max. 60A, corriente de carga ajustable y voltaje de carga en el panel frontal, factor de potencia 1.
-                        </p>
-                        <br><br>
-                        <a href="https://forms.gle/FQWtuAQY27mEZsY78" target="_blank" rel="noopener" class="boton-cotizar">Cotizar Ahora</a>
-                    </div>
-                </div>
-        
+        <!-- beneficios distribuidor -->
+        <section class="distribuidor" id="distribuidor">
+            <h3>Beneficios de ser Distribudor SAT</h3><hr>
+            <div class="flex-around">
+                <p><i class="fal fa-cog"></i> Soporte y capacitaciones</p>
+                <p><i class="fal fa-file-certificate"></i> Certificación de marca</p>
+                <p><i class="fal fa-user-friends"></i> Acompañamiento de negocio</p>
+                <p><i class="fal fa-bullseye-pointer"></i> Posicionamiento de marca</p>
+                <p><i class="fal fa-money-bill-wave-alt"></i> Múltiples métodos de pago</p>
+                <p><i class="fal fa-credit-card"></i> Posibilidad de crédito</p>
+                <p><i class="fal fa-clipboard-check"></i> Garantía de marca</p>
+            </div>
+        </section>
+
+        <section class="calculadora-sai" id="calculadora">
+            <h3>CALCULADORA SAI</h3>
+            <p>
+                Con esta herramienta podrás calcular y conocer de primera mano cual es el total de vatios (w) que consumen tus equipos electronicos (cargas) para así elegir la UPS adecuada.
+            </p>
+            <br>
+            <p>
+                Contacta con nosotros enviándonos tu resultado, así podremos asesorarte de forma personalizada y precisa sin que esto represente un costo adicional.
+            </p>
+        </section>
+
+
+        <!-- tabla calculadora -->
+        <section class="" >
+            <form action="js/log.js">
                 
-            </section>
-        
-            <section class="info ">
-                <div class="info-1">
-                    <div>
-                        <h2>No olvides probar nuestra nueva herramienta GRATIS</h2>
-                        <a href="https://izc.com.co/calculadora" target="_blank" rel="noopener" class="boton-cotizar">Probar Ahora</a>
+
+                <div class="tabla">
+                    <div class="main-form">
+                        <label for="tiempo-de-autonomia">
+                            <span>Tiempo de autonomía esperado (min):</span><br>
+                                <select name="tiempo-de-autonomia" id="tiempo-de-autonomia">
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="40">40</option>
+                                </select>
+                        </label>
                     </div>
-                    <img src="img/chica.png" alt="ilustración">    
+                    <table border="0">
+                        <thead>
+                            <th>Equipo</th>
+                            <th>Potencia (W)</th>
+                            <th>Cantidad</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Servidor</td>
+                                <td>
+                                    <select name="potenciaServidor" id="potenciaServidor">
+                                        <option value="0">0</option>
+                                        <option value="1250">1250</option>
+                                        <option value="1000">1000</option>
+                                        <option value="750">750</option>
+                                        <option value="650">650</option>
+                                        <option value="550">550</option>
+                                        <option value="450">450</option>
+                                        <option value="350">350</option>
+                                        <option value="300">300</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="servidores">
+                                        <input type="number" id="servidores" name="servidores">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Torre de ordenador</td>
+                                <td>
+                                    <select name="potenciaTorre" id="potenciaTorre">
+                                        <option value="0">0</option>
+                                        <option value="1250">1250</option>
+                                        <option value="1000">1000</option>
+                                        <option value="750">750</option>
+                                        <option value="650">650</option>
+                                        <option value="550">550</option>
+                                        <option value="450">450</option>
+                                        <option value="350">350</option>
+                                        <option value="300">300</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="torres">
+                                        <input type="number" id="torres" name="torres">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Monitor PC</td>
+                                <td>
+                                    <select name="potenciaMonitorPC" id="potenciaMonitorPC">
+                                        <option value="0">0</option>
+                                        <option value="200">200</option>
+                                        <option value="150">150</option>
+                                        <option value="125">125</option>
+                                        <option value="100">100</option>
+                                        <option value="75">75</option>
+                                        <option value="60">60</option>
+                                        <option value="50">50</option>
+                                        <option value="35">35</option>
+                                        <option value="25">25</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="monitoresPC">
+                                        <input type="number" id="monitoresPC" name="monitoresPC">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ordenador portátil</td>
+                                <td>
+                                    <select name="potenciaOrdenadorPortatil" id="potenciaOrdenadorPortatil">
+                                        <option value="0">0</option>
+                                        <option value="1250">1250</option>
+                                        <option value="1000">1000</option>
+                                        <option value="750">750</option>
+                                        <option value="650">650</option>
+                                        <option value="550">550</option>
+                                        <option value="450">450</option>
+                                        <option value="350">350</option>
+                                        <option value="300">300</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="ordenadoresPortatiles">
+                                        <input type="number" id="ordenadoresPortatiles" name="ordenadoresPortatiles">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>TV</td>
+                                <td>
+                                    <select name="potenciaTV" id="potenciaTV">
+                                        <option value="0">0</option>
+                                        <option value="200">200</option>
+                                        <option value="150">150</option>
+                                        <option value="125">125</option>
+                                        <option value="100">100</option>
+                                        <option value="75">75</option>
+                                        <option value="60">60</option>
+                                        <option value="50">50</option>
+                                        <option value="35">35</option>
+                                        <option value="25">25</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="tv">
+                                        <input type="number" id="tv" name="tv">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Router</td>
+                                <td>
+                                    <select name="potenciaRouter" id="potenciaRouter">
+                                        <option value="0">0</option>
+                                        <option value="200">200</option>
+                                        <option value="150">150</option>
+                                        <option value="125">125</option>
+                                        <option value="100">100</option>
+                                        <option value="75">75</option>
+                                        <option value="60">60</option>
+                                        <option value="50">50</option>
+                                        <option value="35">35</option>
+                                        <option value="25">25</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="router">
+                                        <input type="number" id="router" name="router">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Switch</td>
+                                <td>
+                                    <select name="potenciaSwitch" id="potenciaSwitch">
+                                        <option value="0">0</option>
+                                        <option value="200">200</option>
+                                        <option value="150">150</option>
+                                        <option value="125">125</option>
+                                        <option value="100">100</option>
+                                        <option value="75">75</option>
+                                        <option value="60">60</option>
+                                        <option value="50">50</option>
+                                        <option value="35">35</option>
+                                        <option value="25">25</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="switch">
+                                        <input type="number" id="switch" name="switch">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AP-Wifi</td>
+                                <td>
+                                    <select name="potenciaAPWifi" id="potenciaAPWifi">
+                                        <option value="0">0</option>
+                                        <option value="200">200</option>
+                                        <option value="150">150</option>
+                                        <option value="125">125</option>
+                                        <option value="100">100</option>
+                                        <option value="75">75</option>
+                                        <option value="60">60</option>
+                                        <option value="50">50</option>
+                                        <option value="35">35</option>
+                                        <option value="25">25</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="apWifi">
+                                        <input type="number" id="apWifi" name="apWifi">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Impresora</td>
+                                <td>
+                                    <select name="potenciaImpresora" id="potenciaImpresora">
+                                        <option value="0">0</option>
+                                        <option value="1250">1250</option>
+                                        <option value="1000">1000</option>
+                                        <option value="750">750</option>
+                                        <option value="650">650</option>
+                                        <option value="550">550</option>
+                                        <option value="450">450</option>
+                                        <option value="350">350</option>
+                                        <option value="300">300</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="impresoras">
+                                        <input type="number" id="impresoras" name="impresoras">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fotocopiadora</td>
+                                <td>
+                                    <select name="potenciaFotocopiadora" id="potenciaFotocopiadora">
+                                        <option value="0">0</option>
+                                        <option value="1250">1250</option>
+                                        <option value="1000">1000</option>
+                                        <option value="750">750</option>
+                                        <option value="650">650</option>
+                                        <option value="550">550</option>
+                                        <option value="450">450</option>
+                                        <option value="350">350</option>
+                                        <option value="300">300</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="fotocopiadora">
+                                        <input type="number" id="fotocopiadora" name="fotocopiadora">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fax</td>
+                                <td>
+                                    <select name="potenciaFax" id="potenciaFax">
+                                        <option value="0">0</option>
+                                        <option value="1250">1250</option>
+                                        <option value="1000">1000</option>
+                                        <option value="750">750</option>
+                                        <option value="650">650</option>
+                                        <option value="550">550</option>
+                                        <option value="450">450</option>
+                                        <option value="350">350</option>
+                                        <option value="300">300</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="fax">
+                                        <input type="number" id="fax" name="fax">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Impresora multifunción</td>
+                                <td>
+                                    <select name="potenciaImpresoraMulti" id="potenciaImpresoraMulti">
+                                        <option value="0">0</option>
+                                        <option value="1250">1250</option>
+                                        <option value="1000">1000</option>
+                                        <option value="750">750</option>
+                                        <option value="650">650</option>
+                                        <option value="550">550</option>
+                                        <option value="450">450</option>
+                                        <option value="350">350</option>
+                                        <option value="300">300</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="impresoraMulti">
+                                        <input type="number" id="impresoraMulti" name="impresoraMulti">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Centralita telefónica</td>
+                                <td>
+                                    <select name="potenciaCentralitaTelefonica" id="potenciaCentralitaTelefonica">
+                                        <option value="0">0</option>
+                                        <option value="200">200</option>
+                                        <option value="150">150</option>
+                                        <option value="125">125</option>
+                                        <option value="100">100</option>
+                                        <option value="75">75</option>
+                                        <option value="60">60</option>
+                                        <option value="50">50</option>
+                                        <option value="35">35</option>
+                                        <option value="25">25</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="centralita">
+                                        <input type="number" id="centralita" name="centralita">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Teléfono</td>
+                                <td>
+                                    <select name="potenciaTelefono" id="potenciaTelefono">
+                                        <option value="0">0</option>
+                                        <option value="200">200</option>
+                                        <option value="150">150</option>
+                                        <option value="125">125</option>
+                                        <option value="100">100</option>
+                                        <option value="75">75</option>
+                                        <option value="60">60</option>
+                                        <option value="50">50</option>
+                                        <option value="35">35</option>
+                                        <option value="25">25</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="telefono">
+                                        <input type="number" id="telefono" name="telefono">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Iluminación 18w</td>
+                                <td>
+                                    <select name="potenciaIluminacion18" id="potenciaIluminacion18">
+                                        <option value="0">0</option>
+                                        <option value="200">200</option>
+                                        <option value="150">150</option>
+                                        <option value="125">125</option>
+                                        <option value="100">100</option>
+                                        <option value="75">75</option>
+                                        <option value="60">60</option>
+                                        <option value="50">50</option>
+                                        <option value="35">35</option>
+                                        <option value="25">25</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="iluminacion18w">
+                                        <input type="number" id="iluminacion18w" name="iluminacion18w">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Iluminación 36w</td>
+                                <td>
+                                    <select name="potenciaIluminacion36" id="potenciaIluminacion36">
+                                        <option value="0">0</option>
+                                        <option value="200">200</option>
+                                        <option value="150">150</option>
+                                        <option value="125">125</option>
+                                        <option value="100">100</option>
+                                        <option value="75">75</option>
+                                        <option value="60">60</option>
+                                        <option value="50">50</option>
+                                        <option value="35">35</option>
+                                        <option value="25">25</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="iluminacion36w">
+                                        <input type="number" id="iluminacion36w" name="iluminacion36w">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Iluminación 54w</td>
+                                <td>
+                                    <select name="potenciaIluminacion54" id="potenciaIluminacion54">
+                                        <option value="0">0</option>
+                                        <option value="200">200</option>
+                                        <option value="150">150</option>
+                                        <option value="125">125</option>
+                                        <option value="100">100</option>
+                                        <option value="75">75</option>
+                                        <option value="60">60</option>
+                                        <option value="50">50</option>
+                                        <option value="35">35</option>
+                                        <option value="25">25</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="iluminacion54w">
+                                        <input type="number" id="iluminacion54w" name="iluminacion54w">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Equipos Médicos</td>
+                                <td>
+                                    <select name="potenciaIluminacionBajoConsumo" id="potenciaIluminacionBajoConsumo">
+                                        <option value="0">0</option>
+                                        <option value="1250">1250</option>
+                                        <option value="1000">1000</option>
+                                        <option value="750">750</option>
+                                        <option value="650">650</option>
+                                        <option value="550">550</option>
+                                        <option value="450">450</option>
+                                        <option value="350">350</option>
+                                        <option value="300">300</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="iluminacionBajo">
+                                        <input type="number" id="iluminacionBajo" name="iluminacionBajo">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nevera</td>
+                                <td>
+                                    <select name="potenciaNevera" id="potenciaNevera">
+                                        <option value="0">0</option>
+                                        <option value="1250">1250</option>
+                                        <option value="1000">1000</option>
+                                        <option value="750">750</option>
+                                        <option value="650">650</option>
+                                        <option value="550">550</option>
+                                        <option value="450">450</option>
+                                        <option value="350">350</option>
+                                        <option value="300">300</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="fax">
+                                        <input type="number" id="nevera" name="nevera">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Microondas</td>
+                                <td>
+                                    <select name="potenciaMicrondas" id="potenciaMicrondas">
+                                        <option value="0">0</option>
+                                        <option value="1250">1250</option>
+                                        <option value="1000">1000</option>
+                                        <option value="750">750</option>
+                                        <option value="650">650</option>
+                                        <option value="550">550</option>
+                                        <option value="450">450</option>
+                                        <option value="350">350</option>
+                                        <option value="300">300</option>
+                                        <option value="250">250</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="fax">
+                                        <input type="number" id="microndas" name="microndas">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Otros</td>
+                                <td>
+                                    <label for="potenciaotros">
+                                        <input type="number" id="potenciaotros" name="potenciaotros">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label for="otros">
+                                        <input type="number" id="otros" name="otros">
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </section>
+                <div class="total">
+                    <!-- <label for="watiosTotales">Watios totales:
+                        <input type="number" readonly value="0" id="watiosTotales" name="watiosTotales">
+                    </label> -->
+                    <button type="button" onclick="calculadora()">Validar</button>
+                </div>
+            </form>
+        </section>
+
 
     </div>
        
     
-
-
-    <script src="main.js"></script>
+    <script src="js/log.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>

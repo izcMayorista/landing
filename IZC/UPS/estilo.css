@@ -40,6 +40,12 @@ hr{
     justify-content: space-around;
     align-items: center;
 }
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
 /* ------------------------------------------------------------ */
 /* WhatsApp */
 /* ------------------------------------------------------------ */
@@ -56,26 +62,35 @@ hr{
 /* ------------------------------------------------------------ */
 header{
     background-color: #f3f3f3;
-    width: 100%;
+    min-width: 100%;
 }
-header .logo img{ 
+.logo-web img, .logo-mobile img{ 
     padding: 12px;
     width: 140px;
 }
-header ul li{
+.logo-mobile{
+    display: none;
+}
+header .menu li{
     text-align: center;
     margin: 10px 0px;
     color: #555;
     padding: 15px;
 }
-header a li:not(header ul a li){
+header .menu li i, .menu-contact i{
+    display: none;
+}
+header button{
+    border: 0;
+}
+.menu-contact :not(header ul a li){
     background-color: var(--IZC);
     padding: 12px;
     margin: 15px;
     width: 160px;
     text-align: center;
     color: #eee;
-    border-radius: 50px;
+    border-radius: 50px;    
 }
 header ul li:hover{
     border-bottom: .5px solid var(--IZC);
@@ -85,26 +100,26 @@ header ul li:hover{
 /*------------------------------------------*/
 .container{
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 /*------------------------------------------*/
 /*main*/
 /*------------------------------------------*/
 main{
+    width: 100%;
+    height: 600px;
     background-image: url(./img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 main section{
-    padding-top: 60px;
     height: 70vh;
 }
 main div{
-    width: 80%;
+    margin-left: 50px;
 }
 h1{
-    width: 600px;
+    width: 70%;
     font-size: 70px;
 }
 /*------------------------------------------*/
@@ -148,7 +163,7 @@ h1{
 .servidor img{
     border-radius: 8px;
     width: 300px;
-    box-shadow: -5px 5px 5px #909090;
+    box-shadow: -5px 5px 5px #90909044;
     margin: 35px;
 }
 .servidor button{
@@ -164,14 +179,17 @@ h1{
 /*------------------------------------------*/
 .productos{
     width: 95%;
-    margin: 150px auto 70px;
+    margin: 100px auto;
 }
-.productos-container div{
-    background-color: #d6d3d3;
-    margin: 2px;
-    width: 200px;
-    box-shadow: -3px 3px 2px #909090cc;
+.productos-container .productos--card{
+    /* background-color: #d6d3d3; */
+    margin: 5px 3px; 
+    /* width: 200px; */
+}
+.productos--card img{
     border-radius: 5px;
+    box-shadow: inset 3px 3px 5px #c2c1c1cc;
+    width: 200px;
 }
 .productos-container p{
     text-align: center;
@@ -208,57 +226,125 @@ h1{
     background-color: #eee;
     box-shadow: inset 2px 2px 5px #b1b1b1;
 }
+.distribuidor .contact-form--button p{
+    background-color: var(--IZC);
+    box-shadow: none;
+    color: #fff;
+}
 /*------------------------------------------*/
-/*tabla*/
+/*calculadora*/
 /*------------------------------------------*/
-.tabla{
-    width: 90%;
-    margin: auto;
-}
-.main-form{
-    margin: 55px auto 15px;
-    display: flex;
-    justify-content: center;
-}
-.main-form select{
-    width: 100%;
-    padding: 8px;
-}
-.tabla table{
-    margin: auto;
+.table{
+    width: 95%;
+    margin: 0 auto;
     border: 1px solid #bbb;
     padding: 12px;
     background-color: #f7f7f7;
     border-radius: 8px;
+    max-width: 800px;
 }
-.tabla table thead{
-    background-color: var(--IZC);
+.table--time{
+    margin: 55px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
 }
-.tabla table thead th{
-    color: #fff;
+.table select, .table input{
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 100%;
     padding: 8px;
 }
-.tabla table input, .tabla table select{
-    padding: 6px;
+.table thead{
+    background-color: var(--IZC);
 }
-.tabla table select{
-    width: 100%;
+.table thead th{
+    color: #fff;
+    padding: 7px;
+    font-weight: normal;
+}
+.table--total{
+    font-size: 18px;
+    background-color: var(--IZC);
+    width: 80%;
+    padding: 7px;
+    border-radius: 7px;
+    border: 0;
+    margin-top: 10px;
+    color: #fff;
 }
 .total button{
-    position: sticky;
+    margin: 15px auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 100px;
+}
+/*------------------------------------------*/
+/*sweet alert*/
+/*------------------------------------------*/
+.swal2-title{
+    font-size: 22px;
+}
+.btn_wp_sweet img{
+    width: 80px;
 }
 
 
 
-
-@media screen and (max-width: 590px) {
-    .logo-header{
+@media screen and (max-width: 760px) {
+    .logo-web{
         display: none;
     }
-    header .logo{
+    .logo-mobile{
         display: flex;
+        width: 100%;
     }
-    main{
-        padding-top: 90px;
+    header{
+        position: fixed;
+        bottom: 0;
+        max-width: 100%;
+    }
+    header .menu{
+        width: 80%;
+    }
+    header .menu li i, .menu-contact i{
+        display: inline;
+        font-size: 22px;
+        color: #666;
+    }
+    header .menu li p, .menu-contact p{
+        display: none;
+    }
+    /*------------------------------------------*/
+    /*main*/
+    /*------------------------------------------*/
+    h1{
+        font-size: 50px;
+    }
+    /*------------------------------------------*/
+    /*productos*/
+    /*------------------------------------------*/
+    .productos--card img{
+        width: 100%;
+    }
+    /*------------------------------------------*/
+    /*distribuidor*/
+    /*------------------------------------------*/
+    .distribuidor p{
+        min-width: 100%;
+    }
+    .distribuidor .contact-form--button{
+        margin: 0 auto;
+    }
+    .distribuidor .contact-form--button p{
+        padding: 15px;
+    }
+    /*------------------------------------------*/
+    /*whatsapp*/
+    /*------------------------------------------*/
+    #Whatsapp{
+        display: none;
     }
 }

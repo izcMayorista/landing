@@ -32,7 +32,10 @@ var ups10kva = [
     "9000w (100%) con autonomía de 7 minutos"
 ];
 
-var paginaFormulario = 'https://forms.gle/cPLC99wuoUdcjsym8';
+const paginaFormulario = 'https://forms.gle/cPLC99wuoUdcjsym8',
+    colorIZC = '#00B4E5',
+    colorCancelar = '#ff1234';
+
 
 function calculadora(){
     // TOMA DE DATOS DE UPS 
@@ -157,9 +160,16 @@ function calculadora(){
 
     var sumaWats = potencias();
     
-    if(sumaWats == 0){
-        resetear();
-        alert("El valor solicitado debe ser mayor a 0");
+    if(sumaWats === 0){
+        Swal.fire({
+            title: 'El valor solicitado en wats debe ser mayor a 0',
+            confirmButtonColor: colorCancelar,
+            confirmButtonText: 'Reintentar',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                resetear();
+            }
+        });
     };
 
     //ups de 1kva 10 min
@@ -167,10 +177,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 1kva de ' + ups1kva[3] + '</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac'
+            cancelButtonColor: colorCancelar
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -185,10 +195,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 2kva de ' + ups2kva[3] + '</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -203,10 +213,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 3kva de ' + ups3kva[3] + '</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -221,10 +231,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 6kva de ' + ups6kva[3] + '</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -239,10 +249,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas más de una UPS</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -257,10 +267,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas más de una UPS</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -275,10 +285,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 1kva de ' + ups1kva[1] + '</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -293,10 +303,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 2kva de ' + ups2kva[1] + '</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -311,10 +321,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 3kva de ' + ups3kva[1] + '</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -329,10 +339,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 6kva de ' + ups6kva[1] + '</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -347,10 +357,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 10kva de ' + ups10kva[1] + '</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -365,10 +375,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas más de una UPS</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac',
+            cancelButtonColor: colorCancelar,
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -384,9 +394,9 @@ function calculadora(){
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 1kva de ' + ups1kva[0] + '</p>',
             showCancelButton: true,
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
-            cancelButtonColor: '#0230ac'
+            cancelButtonColor: colorCancelar
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -401,9 +411,9 @@ function calculadora(){
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 2kva de ' + ups2kva[0] + '</p>',
             showCancelButton: true,
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
-            cancelButtonColor: '#0230ac'
+            cancelButtonColor: colorCancelar
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -418,9 +428,9 @@ function calculadora(){
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 3kva de ' + ups3kva[0] + '</p>',
             showCancelButton: true,
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
-            cancelButtonColor: '#0230ac'
+            cancelButtonColor: colorCancelar
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -435,9 +445,9 @@ function calculadora(){
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 6kva de ' + ups6kva[0] + '</p>',
             showCancelButton: true,
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
-            cancelButtonColor: '#0230ac'
+            cancelButtonColor: colorCancelar
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -454,9 +464,9 @@ function calculadora(){
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas una UPS de 10kva de ' + ups10kva[0] + '</p>',
             showCancelButton: true,
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
-            cancelButtonColor: '#0230ac'
+            cancelButtonColor: colorCancelar
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);
@@ -470,10 +480,10 @@ function calculadora(){
         Swal.fire({
             title: 'Registrate y recibe más información',
             html: '<p >Para '+ sumaWats+'wats necesitas más de una UPS</p>',
-            confirmButtonColor: '#e10019',
+            confirmButtonColor: colorIZC,
             confirmButtonText: 'Registrarme',
             showCancelButton: true,
-            cancelButtonColor: '#0230ac'
+            cancelButtonColor: colorCancelar
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.replace(paginaFormulario);

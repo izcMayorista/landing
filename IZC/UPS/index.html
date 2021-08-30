@@ -8,9 +8,8 @@
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
     <!--css-->
     <link rel="stylesheet" href="estilo.css">
-    <!-- tailwind -->
-    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>UPS Online UPS Interactiva SAT | IZC Mayorista</title>
 </head>
 <body>
@@ -23,24 +22,40 @@
     </div>
 
     <!--header-->
+    <a class="logo-mobile flex-around" href="index.html">
+        <img src="img/izc-logo.png" alt="logo oficial IZC">
+    </a>
     <header class="flex-around">    
-        <ul class="flex-around">
-            <a class="logo" href="index.html">
+        <ul class="flex-around menu">
+            <a class="logo-web" href="index.html">
                 <img src="img/izc-logo.png" alt="logo oficial IZC">
-            </a>   
+            </a>
             <a href="#productos">
-                <li>Catálogo</li>
+                <li>
+                    <i class="fas fa-box-open"></i>
+                    <p>Catálogo</p> 
+                </li>
             </a>
             <a href="#distribuidor">
-                <li>Distribuidores</li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <p>Distribuidores</p>
+                </li>
             </a>       
             <a href="#calculadora">
-                <li>Calculadora SAI</li>
+                <li>
+                    <i class="fas fa-calculator"></i>
+                    <p>Calculadora SAI</p>
+                </li>
             </a>
         </ul>
-        <a href="">
-            <li>Contacto</li>
-        </a>
+        <button class="button_Contact">
+            <li class="menu-contact contact-form--button">
+                <i class="fas fa-phone-alt"></i>
+                <p>Contacto</p>
+            </li>
+        </button>
+     
     </header>
     
     <!-- main -->
@@ -78,17 +93,11 @@
                     Las alteraciones de voltaje pueden poner en peligro las ejecuciones de equipos eléctricos y electrónicos, (ruidos, interferencias, caidas de voltaje y en el peor de los casos la suspensión de la energia) lo cual suele costarle a las empresas y usuarios millones de dólares al año.
                 </p>
                 <ul>
-                    <a href="">
-                        <li>UPS Interactiva / Online</li>
-                    </a>
-                    <a href="">
-                        <li>Inversores</li>
-                    </a>
-                    <a href="">
-                        <li>Reguladores</li>
-                    </a>
+                    <li>UPS Interactiva / Online</li>
+                    <li>Inversores</li>
+                    <li>Reguladores</li>
                 </ul>
-                <a href="">
+                <a href="#productos">
                     <button>
                         Ver Productos
                     </button>
@@ -101,26 +110,50 @@
         <section class="productos" id="productos">
             <h2>Línea de producto SAT</h2><hr>
             <div class="productos-container flex-around">
-                <div>
+                <div class="productos--card">
                     <img src="img/ups-online.jpg" alt="ups online">
                         <p>UPS Online</p>
-                    </div>
-                <div>
-                    <img src="img/ups-interactiva.jpg" alt="ups Interactiva1">
+                </div>
+
+                <div class="productos--card">
+                    <img src="img/ups-interactiva.jpg" alt="ups Interactiva">
                         <p>UPS Interactiva</p>
                 </div>
-                <div>
+
+                <div class="productos--card">
                     <img src="img/bateria.jpg" alt="baterias para ups">
                     <p>Baterías para UPS</p>
                 </div>
-                <div>
+
+                <div class="productos--card">
                     <img src="img/inversor.jpg" alt="inversor de energia">
                     <p>Inversor de corriente</p>
                 </div>
 
-                <div>
+                <div class="productos--card">
                     <img src="img/regulador.jpg" alt="regulador de corriente">
-                        <p>Regulador de corriente</p>
+                    <p>Regulador de corriente</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- productos - ups online -->
+        <section class="productos">
+            <h2>UPS Online</h2><hr>
+            <div class="productos-container flex">
+                <div class="productos--card">
+                    <img src="img/ups-online.jpg" alt="ups online">
+                    <p>UPS Online Monofácica</p>
+                </div>
+
+                <div class="productos--card">
+                    <img src="img/ups-online-bifasica.jpg" alt="ups-online-bifasica">
+                    <p>UPS Online Bifásica</p>
+                </div>
+
+                <div class="productos--card">
+                    <img src="img/ups-online-trifasica.jpg" alt="ups-online-trifasica">
+                    <p>UPS Online Trifásica</p>
                 </div>
             </div>
         </section>
@@ -159,20 +192,24 @@
         
         <!-- beneficios distribuidor -->
         <section class="distribuidor" id="distribuidor">
-            <h3>Beneficios de ser Distribudor SAT</h3><hr>
+            <h3>Beneficios de ser Distribudor</h3><hr>
             <div class="flex-around">
-                <p><i class="fal fa-cog"></i> Soporte y capacitaciones</p>
-                <p><i class="fal fa-file-certificate"></i> Certificación de marca</p>
-                <p><i class="fal fa-user-friends"></i> Acompañamiento de negocio</p>
-                <p><i class="fal fa-bullseye-pointer"></i> Posicionamiento de marca</p>
-                <p><i class="fal fa-money-bill-wave-alt"></i> Múltiples métodos de pago</p>
-                <p><i class="fal fa-credit-card"></i> Posibilidad de crédito</p>
-                <p><i class="fal fa-clipboard-check"></i> Garantía de marca</p>
+                <p>Soporte y capacitaciones</p>
+                <p>Certificación de marca</p>
+                <p>Acompañamiento de negocio</p>
+                <p>Posicionamiento de marca</p>
+                <p>Múltiples métodos de pago</p>
+                <p>Posibilidad de crédito</p>
+                <p>Garantía de marca</p>
+                <a href="https://forms.gle/FQWtuAQY27mEZsY78" target="_blank" rel="noopener" class="contact-form--button">
+                    <p>Inscribirme como distribuidor</p>
+                </a>
             </div>
         </section>
 
+        <!-- calculadora SAI -->
         <section class="calculadora-sai" id="calculadora">
-            <h3>CALCULADORA SAI</h3>
+            <h3>CALCULADORA SAI</h3><hr>
             <p>
                 Con esta herramienta podrás calcular y conocer de primera mano cual es el total de vatios (w) que consumen tus equipos electronicos (cargas) para así elegir la UPS adecuada.
             </p>
@@ -180,26 +217,22 @@
             <p>
                 Contacta con nosotros enviándonos tu resultado, así podremos asesorarte de forma personalizada y precisa sin que esto represente un costo adicional.
             </p>
-        </section>
 
+            <section class="calculadora-sai--table">
 
-        <!-- tabla calculadora -->
-        <section class="" >
-            <form action="js/log.js">
-                
+                <form action="./js/log.js">    
+                    <label for="tiempo-de-autonomia" class="table table--time">
+                        <span>Tiempo de autonomía esperado (min):</span><br>
+                            <select name="tiempo-de-autonomia" id="tiempo-de-autonomia">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="40">40</option>
+                            </select>
+                            
+                            <button class="table--total" type="button" onclick="calculadora()">Validar</button>
+                    </label>
 
-                <div class="tabla">
-                    <div class="main-form">
-                        <label for="tiempo-de-autonomia">
-                            <span>Tiempo de autonomía esperado (min):</span><br>
-                                <select name="tiempo-de-autonomia" id="tiempo-de-autonomia">
-                                    <option value="10">10</option>
-                                    <option value="20">20</option>
-                                    <option value="40">40</option>
-                                </select>
-                        </label>
-                    </div>
-                    <table border="0">
+                    <table border="0" class="table">
                         <thead>
                             <th>Equipo</th>
                             <th>Potencia (W)</th>
@@ -671,15 +704,20 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                <div class="total">
-                    <!-- <label for="watiosTotales">Watios totales:
-                        <input type="number" readonly value="0" id="watiosTotales" name="watiosTotales">
-                    </label> -->
-                    <button type="button" onclick="calculadora()">Validar</button>
-                </div>
-            </form>
+                
+
+
+
+                    <div class="total flex-around">
+                        <!-- <label for="watiosTotales">Watios totales:
+                            <input type="number" readonly value="0" id="watiosTotales" name="watiosTotales">
+                        </label> -->
+                        <button class="table--total" type="button" onclick="calculadora()">Validar</button>
+                    </div>
+                </form>
+            </section>
         </section>
+
 
 
     </div>

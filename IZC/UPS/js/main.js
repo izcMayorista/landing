@@ -1,26 +1,5 @@
-// document.slider.src = 'img/inversor.jpg';
-// var imagenes = [
-//     'img/ups.jpg',
-//     'img/regulador.jpg',
-//     'img/inversor.jpg'
-// ];
 
-// var indice = 0;
-// var tiempo = 2000;
-
-// function cambiarImg (){
-//     document.slider.src = imagenes[indice];
-
-//     if(indice < 2){
-//         indice++;
-//     }else{
-//         indice = 0;
-//     };
-
-// };  
-// setInterval(cambiarImg, tiempo);
-
-var header = document.querySelector('header'),
+const header = document.querySelector('header'),
     main = document.querySelector('main');
 
 function scroll_Header_Styles(scroll){
@@ -28,8 +7,35 @@ function scroll_Header_Styles(scroll){
     main.style.paddingTop = '60px';
     main.style.transition = '2s';
 }
-var scroll = window.addEventListener('scroll', (event)=>{
+const scroll = window.addEventListener('scroll', (event)=>{
     setTimeout(() => {
         event != false ; scroll_Header_Styles(scroll);
     }, 4000);
+});
+
+// botón de contacto
+const buttonContact = document.querySelector('.button_Contact');
+
+
+function showModalContact(){
+    // Swal.fire({
+    //     title: 'Contactanos',
+        
+    //     html: 
+    //         '<a href="https://wa.link/khjd49" class="btn_wp_sweet" target="_blank" rel="noopener"><img src="img/logo-whatsapp.png" alt="contacto por whatsapp"></a><a href="https://wa.link/khjd49" class="btn_wp_sweet" target="_blank" rel="noopener"><img src="img/logo-whatsapp.png" alt="contacto por whatsapp"></a>',
+    //     showCloseButton: true
+    // })
+    Swal.fire({
+        title: 'Contactanos por',
+        html:
+            '<a href="https://wa.link/khjd49" class="btn_wp_sweet" target="_blank" rel="noopener"><img src="img/logo-whatsapp.png" alt="contacto por whatsapp"></a>'+
+            
+            '<a href="https://forms.gle/FQWtuAQY27mEZsY78" class="btn_wp_sweet" target="_blank" rel="noopener"><img src="img/logo-email.png" alt="contacto por email "></a>',
+        showCloseButton: true,
+        focusConfirm: false
+    })
+      
+}
+buttonContact.addEventListener('click', () =>{
+    showModalContact()
 });

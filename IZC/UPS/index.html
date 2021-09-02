@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80726847-26"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-80726847-26');
+    </script>
+
+        <!-- Global site tag (gtag.js) - Google Ads: 1010029758 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1010029758"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-1010029758');
+    </script>
+    <!-- Event snippet for Landing Page - Form Conversion IZC conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-1010029758/u-iLCLHRyr8CEL6pz-ED',
+            'event_callback': callback
+        });
+        return false;
+        }
+        </script>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="UTF-8">
     <!--descripccion-->
-    <meta name="Description" content="Cuide sus equipos de todos los problemas de las redes eléctricas, con UPS Online UPS Interactivas, Reguladores de Voltaje e Inversores SAT">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
     <!--css-->
     <link rel="stylesheet" href="estilo.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="UPS Online UPS Interactiva SAT, distribuidor mayorista ups, ups para computador, ups para pc, ups para servidor, ups 1kva ups 2kva ups 3kva ups 6kva ups 10kva">
+    <meta name="keywords" content="ups online, ups interactiva, ups sat, ups 1kva, ups 3kva">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="IZC Mayorista">
     <title>UPS Online UPS Interactiva SAT | IZC Mayorista</title>
 </head>
 <body>
@@ -106,6 +146,27 @@
             <img src="img/proteccion.jpg" alt="ups para servidores">
         </section>
 
+        <!-- productos - ups online -->
+        <section class="productos">
+            <h2>UPS Online</h2><hr>
+            <div class="productos-container flex">
+                <div class="productos--card">
+                    <img src="img/ups-online.jpg" alt="ups online">
+                    <p>UPS Online Monofácica</p>
+                </div>
+
+                <div class="productos--card">
+                    <img src="img/ups-online-bifasica.jpg" alt="ups-online-bifasica">
+                    <p>UPS Online Bifásica</p>
+                </div>
+
+                <div class="productos--card">
+                    <img src="img/ups-online-trifasica.jpg" alt="ups-online-trifasica">
+                    <p>UPS Online Trifásica</p>
+                </div>
+            </div>
+        </section>
+
         <!-- productos -->
         <section class="productos" id="productos">
             <h2>Línea de producto SAT</h2><hr>
@@ -133,27 +194,6 @@
                 <div class="productos--card">
                     <img src="img/regulador.jpg" alt="regulador de corriente">
                     <p>Regulador de corriente</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- productos - ups online -->
-        <section class="productos">
-            <h2>UPS Online</h2><hr>
-            <div class="productos-container flex">
-                <div class="productos--card">
-                    <img src="img/ups-online.jpg" alt="ups online">
-                    <p>UPS Online Monofácica</p>
-                </div>
-
-                <div class="productos--card">
-                    <img src="img/ups-online-bifasica.jpg" alt="ups-online-bifasica">
-                    <p>UPS Online Bifásica</p>
-                </div>
-
-                <div class="productos--card">
-                    <img src="img/ups-online-trifasica.jpg" alt="ups-online-trifasica">
-                    <p>UPS Online Trifásica</p>
                 </div>
             </div>
         </section>
@@ -199,7 +239,7 @@
                 <p>Acompañamiento de negocio</p>
                 <p>Posicionamiento de marca</p>
                 <p>Múltiples métodos de pago</p>
-                <p>Posibilidad de crédito</p>
+                <p>Stock de productos</p>
                 <p>Garantía de marca</p>
                 <a href="https://forms.gle/FQWtuAQY27mEZsY78" target="_blank" rel="noopener" class="contact-form--button">
                     <p>Inscribirme como distribuidor</p>
@@ -717,7 +757,6 @@
                 </form>
             </section>
         </section>
-
 
 
     </div>

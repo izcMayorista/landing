@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+:root{
+    --colorMenu: #d6d8db;
+    --colorBlanco: #ffffff;
+    --colorGris: #3a3a3a;
+    --colorTitulo: #003f76;
+    --colorSombra: 2px 2px 2px 2px #e3e3e3,
+                   inset 2px 2px 2px 2px #fff;}
+img{
+    width: 100%;
+    height: auto;
+}
+p{
+    font-size: 18px;
+    color: var(--colorGris);
+}
+h2,h3{
+    color: var(--colorTitulo);
+}
+hr{
+    margin-bottom: 8px;
+}
+/*------------------------------------------*/
+/*whatsapp*/
+/*------------------------------------------*/
+#Whatsapp{
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+}
+#Whatsapp img{
+    width: 80px;
+}
+/*------------------------------------------*/
+/*header*/
+/*------------------------------------------*/
+header{
+    padding: 12px;
+    background-color: var(--colorMenu);
+    text-align: center;
+}
+header img{
+    width: 160px;
+}
+/*------------------------------------------*/
+/*main*/
+/*------------------------------------------*/
+main{
+    background-image: linear-gradient(var(--colorMenu), #fff);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+main div{
+    padding: 35px;
+    width: 600px;
+    text-transform: uppercase;
+}
+main img{
+    padding: 35px;
+    width: 500px;
+}
+h1{
+    padding: 8px 0px;
+    font-size: 38px;
+    color: #333;
+}
+button{
+    min-width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 0;
+    background-color: var(--colorTitulo);
+    background-image: linear-gradient(180deg, var(--colorTitulo) 5%, #01589e 70%);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 2px #cecdcd;
+}
+/*------------------------------------------*/
+/*contendedor body*/
+/*------------------------------------------*/
+.contenedor-body{
+    width: 90%;
+    margin: 90px auto;
+}
+/*------------------------------------------*/
+/*mercados*/
+/*------------------------------------------*/
+.mercados, .mercados-tarjetas div{
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+.mercados-textos{
+    width: 390px;
+}
+.mercados-tarjetas{
+    border-radius: 8px;
+    width: 650px;
+}
+.mercados-tarjetas h2{
+    text-align: center;
+    padding-top: 35px;
+}
+.mercados-tarjetas h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 180px;
+    height: 100px;
+    padding: 12px;
+    margin: 6px;
+    box-shadow: var(--colorSombra);
+    border-radius: 8px;
+}
+.mercados-tarjetas h3 i{
+    margin-right: 8px
+}
+.mercados-tarjetas p{
+    padding: 12px;
+}
+/*------------------------------------------*/
+/*portafolio*/
+/*------------------------------------------*/
+.portafolio{
+    margin: 120px auto;  
+}
+.portafolio-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.productos-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portafolio-productos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+    width: 600px;
+}
+.portafolio-productos img{
+    padding: 12px 6px;
+    width: 170px;
+    border-radius: 6px;
+    border: .5px #dad7d7 solid;
+    box-shadow: var(--colorSombra);
+    margin:6px;
+}
+.portafolio-categorias{
+    padding: 12px;
+    margin-top: 20px;
+    width: 400px;
+}
+.portafolio-categorias div{
+    padding: 12px 0;
+}
+.portafolio a{
+    width: 100%;
+}
+/*------------------------------------------*/
+/*iconos*/
+/*------------------------------------------*/
+.iconos div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+}
+.iconos p{
+    min-width: 250px;
+    margin: 8px;
+    border-radius: 50px 50px 50px 0px;
+    padding: 23px;
+    background-color: aliceblue;
+    box-shadow: var(--colorSombra);
+}
+/*------------------------------------------*/
+/*form*/
+/*------------------------------------------*/
+iframe{
+    width: 100%;
+    height: 1270px;
+}
+.form-title{
+    color: #747474;
+    font-size: 40px;
+    text-align: center;
+    padding: 90px 0px 10px;
+}
+/*------------------------------------------*/
+/*footer*/
+/*------------------------------------------*/
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 450px) {
+    h1{
+        font-size: 36px;
+    }
+    .mercados-tarjetas h3{
+        width: 100%;
+    }
+    .portafolio-productos img{
+        width: 150px;
+    }
+}

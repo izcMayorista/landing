@@ -1,0 +1,10 @@
+nombre
+celular
+correo
+ciudad
+dirección (opcional)
+código promoción 
+
+tipo de negocio
+
+179.000

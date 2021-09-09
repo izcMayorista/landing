@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;600&display=swap');
+
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Epilogue', sans-serif;
+}
+:root{
+    --colorMarca: #00a8dd;
+    --fondo: #f3f3f3;
+    --Titulo: #3f4041;
+    --colorSombra: 2px 2px 2px 2px #ccc,
+                   inset 2px 2px 2px 2px #fff;
+}
+p{
+    color: #333;
+}
+html{
+    background-color: var(--fondo);
+    scroll-behavior: smooth;
+}
+img{
+     width: 100%;
+     height: auto;
+}
+h1, h2, h3, h4{
+    color: var(--Titulo);
+    text-transform: uppercase;
+}
+hr{
+    margin-bottom: 12px;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: var(--Titulo);
+}
+/*------------------------------------------*/
+/*contador*/
+/*------------------------------------------*/
+#contador{
+    width: 100%;
+    color: #FFF;
+    height: 5px;
+    background-color: var(--colorMarca);
+}
+/* ------------------------------------------------------------ */
+/* header  */
+/* ------------------------------------------------------------ */
+header{
+    width: 100%;
+    padding: 10px;
+}
+header img{
+    width: 130px;
+}
+header li{
+    color: #333;
+    list-style: none;
+    padding: 20px;
+}
+header li:hover{
+    border-bottom: .5px #aaaaaa77 solid;
+}
+.icono-menu{
+    font-size: 30px;
+}
+.hide{
+    display: none;
+}
+.color-div{
+    box-shadow: var(--colorSombra);
+    background-color: #eee;
+}
+/* ------------------------------------------------------------ */
+/* Main */
+/* ------------------------------------------------------------ */
+main{
+    margin-top: 50px;
+}
+#main { 
+    flex-wrap: wrap-reverse;
+    padding: 15px 35px 0px 35px;
+}
+main div{
+    text-transform: uppercase;
+    width: 600px;
+}
+main .main-logo{
+    width: 180px;
+}
+h1{
+    font-size: 30px;
+}
+main p{
+    text-transform: none;
+    margin: 8px auto;
+}
+main .producto{
+    width: 450px;
+    filter: drop-shadow(-5px 6px 5px #cccbcb);
+}
+main img:not(main div img){
+    width: 400px;
+}
+.boton-cotizar button {
+    text-align: center;
+    background: linear-gradient(to bottom, var(--colorMarca) 5%, #095496 100%);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 12px;
+    text-decoration: none;
+    width: 350px;
+    border: 0;
+    font-size: 17px;
+}
+/*------------------------------------------*/
+/*mercados*/
+/*------------------------------------------*/
+.mercados{
+    background-color: #eee;
+    margin: 90px auto 0px auto;
+    box-shadow: var(--colorSombra);
+}
+.mercados, .mercados-tarjetas div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+.mercados-textos{
+    width: 340px;
+}
+.mercados-textos h2{
+    padding: 34px 0px 0px 0px;  
+}
+.mercados-tarjetas{
+    border-radius: 8px;
+    width: 700px;
+}
+.mercados-tarjetas h2{
+    text-align: center;
+    padding-top: 35px;
+}
+.mercados-tarjetas h3{
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+    height: 70px;
+    padding: 12px;
+    margin: 6px;
+    box-shadow: var(--colorSombra);
+    border-radius: 8px;
+}
+.mercados-tarjetas p{
+    padding: 12px;
+}
+/*------------------------------------------*/
+/*soluciones*/
+/*------------------------------------------*/
+.soluciones{
+    margin-top: 120px;
+}
+.soluciones-container{
+    justify-content: center;
+}
+.soluciones-container img{
+    width: 350px;
+    border-radius: 0px 10px 10px 0px;
+}
+.soluciones--text{
+    border-radius: 8px;
+    padding: 35px;
+    width: 530px;
+    height: auto;
+    background: #fefefe;
+}
+.soluciones--list{
+    width: 100%;
+}
+.soluciones--list li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 15px;
+    margin: 5px auto;
+    border: 1ps solid #eee;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px 1px rgb(233, 231, 231);
+}
+.soluciones--list li i, .arrow{
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--colorMarca);
+    display: flex;
+    justify-content: flex-end;
+}
+/*------------------------------------------*/
+/*productos*/
+/*------------------------------------------*/
+.productos{
+    padding-top: 120px;
+}
+.productos-container--card{
+    margin: 25px auto;
+}
+.productos-card div{
+    width: 200px;
+    background-color: bisque;
+    padding: 15px;
+    box-shadow: var(--colorSombra);
+    background-color: #eee;
+    position: relative;
+    margin: 12px 6px;
+}
+.productos-card div img{
+    width: 100%;
+    filter: brightness(95%);
+}
+.productos-card div i{
+    position: absolute;
+    z-index: 10;
+}
+/*------------------------------------------*/
+/*distribuidor*/
+/*------------------------------------------*/
+.distribuidor{
+    margin: 150px auto;
+}
+.distribuidor div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+}
+.distribuidor p{
+    min-width: 250px;
+    margin: 8px;
+    border-radius: 50px 50px 50px 0px;
+    padding: 23px;
+    background-color: #eee;
+    box-shadow: var(--colorSombra);
+}
+/* ------------------------------------------------------------ */
+/* Whatsapp */
+/* ------------------------------------------------------------ */
+#Whatsapp{
+    margin: 15px;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+}
+#Whatsapp img{
+    width: 80px;
+}
+/*------------------------------------------*/
+/*responsive*/
+/*------------------------------------------*/
+@media screen and (max-width: 530px) {
+    header ul{
+        margin-top: 15px;
+        border-radius: 6px;
+        background-color: #ffffffaa;
+    }
+    header li{
+        text-align: center;
+        width: 160px;
+        border-bottom: .5px #aaaaaa77 solid;
+    }
+    main .producto{
+        width: 400px;
+    }
+    main div{
+        padding: 15px;
+        width: 400px;
+    }
+    .mercados-tarjetas h3{
+        width: 100%;
+    }
+    .soluciones-container img{
+        display: none;
+        border-radius: 15px;        
+    }
+}
